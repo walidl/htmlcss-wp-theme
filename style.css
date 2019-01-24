@@ -2,6 +2,23 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background-image:url("img/wall.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.layover{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(50, 50, 50,0.3);
+  z-index: -1;
 }
 
 .clear:after{
@@ -13,15 +30,16 @@
 .container{
   width: 1000px;
   margin: auto;
-  background-color: aqua;
   padding: 10px 0;
 }
 
 header{
   width: 100%;
  height:250px;
- background-color: green;
+ background-color: white;
  position: relative;
+ border-top-left-radius: 3px;
+ border-top-right-radius: 3px;
 }
 
 header img{
@@ -39,6 +57,8 @@ nav{
   background-color: yellow;
   text-align: center;
   background-color: #504741;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 nav .bottoni{
@@ -47,52 +67,105 @@ nav .bottoni{
 }
 
 nav .button{
-  border-left: 1px solid grey;
-  border-right: 1px solid black;
-}
- .bottoni:first-child{
-   border-left: none;
- }
-
-nav .button{
-  color: grey;
+  color: lightgrey;
+  text-shadow: 1px 1px 1px black;
   float:left;
   text-align: center;
   height: 100%;
   position: relative;
   padding: 0 10px;
+  padding-top: 13px;
+  border-left: 1px solid grey;
+  border-right: 1px solid black;
+}
+nav .bottoni :first-child{
+  border-left: none;
+}
 
+nav .bottoni :last-child{
+  border-right: none;
+}
+
+.button:hover{
+  background-color: #302B27;
+  color:white;
+}
+
+.button .fas{
+  font-size:10px;
+  position: relative;
+  bottom: 2px;
 }
 
 /* MAIN */
 
-main{
-  width: 100%;
+section{
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
   margin-bottom: 10px;
 }
 
-.section{
-  background-color: white;
+section h1{
+  font-family: monospace;
+  font-size: 50px;
+  color:#504741;
+  text-shadow: 2px 2px 4px lightgrey;
+}
+
+main{
+  width: 100%;
+  margin-bottom: 10px;
+  padding-top: 15px;
+}
+
+.side{
   float:left;
 }
-.section.left{
+
+.side.left{
   width: 27%;
 }
 
-.section.center{
+.side.center{
   width: 42%;
   margin:  0 2%;
-
 }
 
-.section.right{
+.side.right{
   width: 27%;
 }
+
+.content{
+  border-bottom: 1px solid lightgrey;
+  margin-bottom:10px;
+}
+
+.content p{
+  margin: 15px 0;
+}
+
+.content a{
+  color: limegreen;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.content a:visited, .content a:hover{
+
+  text-decoration: underline;
+  color: forestgreen;
+}
+
+.content img{
+  width: 80%;
+  border: 1px solid green;
+}
+
 
 /* FOOTER */
 
 footer{
   width: 100%;
   height: 300px;
-  background-color: white;
 }
