@@ -66,7 +66,6 @@ header img{
 
 nav{
   height: 45px;
-  background-color: yellow;
   text-align: center;
   background-color: #504741;
   font-size: 12px;
@@ -84,18 +83,17 @@ nav .button{
   float:left;
   text-align: center;
   height: 100%;
-  position: relative;
   padding: 0 10px;
   line-height: 45px;
   border-left: 1px solid grey;
   border-right: 1px solid black;
   cursor: pointer;
 }
-nav .bottoni :first-child{
+nav .bottoni :first-child .button{
   border-left: none;
 }
 
-nav .bottoni :last-child{
+nav .bottoni :last-child .button{
   border-right: none;
 }
 
@@ -109,6 +107,41 @@ nav .bottoni :last-child{
   position: relative;
   bottom: 2px;
 }
+
+/* DROPDOWN MENU */
+
+.dropdown{
+  position: relative;
+  float: left;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  top:45px;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropItem{
+  color: white;
+  text-align: left;
+  padding-left: 10px;
+  width: 170px;
+  height: 35;
+  line-height: 35px;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid black;
+  background-color: #504741;
+  cursor: pointer;
+}
+
+.dropItem:hover{
+  background-color: #302B27;
+}
+
 
 /* MAIN */
 
