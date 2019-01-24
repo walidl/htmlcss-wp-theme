@@ -11,6 +11,18 @@ body{
   background-attachment: fixed;
 }
 
+a{
+  color: limegreen;
+  font-style: normal;
+  text-decoration: none;
+}
+
+a:visited, a:hover{
+
+  text-decoration: underline;
+  color: forestgreen;
+}
+
 .layover{
   position: fixed;
   top: 0;
@@ -43,7 +55,7 @@ header{
 }
 
 header img{
-  width: 95%;
+  width: 98%;
   position:absolute;
   top:50%;
   left:50%;
@@ -77,6 +89,7 @@ nav .button{
   padding-top: 13px;
   border-left: 1px solid grey;
   border-right: 1px solid black;
+  cursor: pointer;
 }
 nav .bottoni :first-child{
   border-left: none;
@@ -135,7 +148,35 @@ main{
 .side.right{
   width: 27%;
 }
+/* LEFT SIDE */
 
+.left .link{
+  margin: 5px 0;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.left .link:hover{
+  background-color: #F5F5F5;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top: 3px solid #E2E2E2;
+  padding-top: 7px;
+}
+
+/* CENTRAL SIDE */
+
+.left .title img{
+  width:15px;
+  position:relative;
+  top: 2px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.left .title span:hover{
+  color: green;
+  cursor: pointer;
+}
 .content{
   border-bottom: 1px solid lightgrey;
   margin-bottom:10px;
@@ -143,18 +184,6 @@ main{
 
 .content p{
   margin: 15px 0;
-}
-
-.content a{
-  color: limegreen;
-  font-style: normal;
-  text-decoration: none;
-}
-
-.content a:visited, .content a:hover{
-
-  text-decoration: underline;
-  color: forestgreen;
 }
 
 .content img{
