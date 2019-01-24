@@ -11,18 +11,6 @@ body{
   background-attachment: fixed;
 }
 
-a{
-  color: limegreen;
-  font-style: normal;
-  text-decoration: none;
-}
-
-a:visited, a:hover{
-
-  text-decoration: underline;
-  color: forestgreen;
-}
-
 .layover{
   position: fixed;
   top: 0;
@@ -50,8 +38,8 @@ header{
  height:250px;
  background-color: white;
  position: relative;
- border-top-left-radius: 3px;
- border-top-right-radius: 3px;
+ border-top-left-radius: 2px;
+ border-top-right-radius: 2px;
 }
 
 header img{
@@ -70,6 +58,7 @@ nav{
   background-color: #504741;
   font-size: 12px;
   font-weight: 500;
+  box-shadow: 2px 2px rgba(0,0,0,0.1);
 }
 
 nav .bottoni{
@@ -145,11 +134,24 @@ nav .bottoni :last-child .button{
 
 /* MAIN */
 
+main a{
+ color: limegreen;
+ font-style: normal;
+ text-decoration: none;
+}
+
+main a:visited, a:hover{
+
+ text-decoration: underline;
+ color: forestgreen;
+}
+
 section{
   background-color: white;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 2px;
   margin-bottom: 10px;
+  box-shadow: 2px 2px rgba(0,0,0,0.1);
 }
 
 section h1{
@@ -205,6 +207,7 @@ main{
   margin: 5px 0;
   padding: 10px;
   font-weight: 500;
+  font-size: 15px;
 }
 
 .left .link:hover{
@@ -237,5 +240,72 @@ main{
 
 footer{
   width: 100%;
-  height: 300px;
+  height: 400px;
+}
+footer section{
+  height: 100%;
+  padding:20px;
+}
+
+footer a {
+  color: lightgrey;
+  text-decoration: none;
+  margin-left:10px;
+  line-height: 30px;
+}
+
+footer a:visited, a:hover{
+
+ text-decoration: underline;
+ color: grey;
+}
+
+footer .part{
+  width: 22%;
+  float: left;
+  margin-left: 3%;
+}
+
+footer .part h3{
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+footer .archive li{
+  font-size: 14px;
+  list-style-type: none;
+  display: block;
+  height: 40px;
+  line-height: 30px;
+  margin-bottom:10px;
+
+}
+
+footer .archive li:hover{
+  background-color: #F5F5F5;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top: 3px solid #E2E2E2;
+}
+.comments article{
+  margin-bottom: 10px;
+}
+
+.comments .pic{
+  float:left;
+  width: 20%;
+  height: 60px;
+  position: relative;}
+.comments .pic > img{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.comments .comm{
+  float:left;
+  width: 80%;
+  font-size: 14px;
 }
