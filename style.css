@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 1000px;
+  margin: auto;
+}
+
+header{
+  width: 100%;
+ height:250px;
+ background-color: green;
+ position: relative;
+
+}
+
+header img{
+  width: 95%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+nav{
+  height: 45px;
+  background-color: yellow;
+  text-align: center;
+  background-color: #504741;
+}
+
+nav .bottoni{
+  height: 100%;
+  display: inline-block;
+}
+
+nav .button{
+  border-left: 1px solid grey;
+  border-right: 1px solid black;
+}
+ .bottoni:first-child{
+   border-left: none;
+ }
+
+nav .button{
+  color: grey;
+  float:left;
+  text-align: center;
+  height: 100%;
+  position: relative;
+  padding: 0 10px;
+
+}
